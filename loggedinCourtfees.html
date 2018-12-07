@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="box.css">
+    <link rel="stylesheet" type="text/css" href="menubar.css">
+    <link rel="stylesheet" type="text/css" href="pop.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<style> 
+    .container1 {
+  width:1000px; 
+  height: 300px;
+        margin-top: 0px;
+}
+
+.leftbar {
+  width:300px; 
+  float:left; 
+  
+  height: 150px;
+  margin-top: 0px
+}
+.centerbar {
+  width:auto; 
+  height: 150px; 
+  float:center; 
+  margin-top: 10px;
+  margin-left:300px;
+}
+.centerbar p {
+  color: #ffffff;
+  
+  padding-top: 10px;
+}
+header
+{
+    background-color:#191970;
+	padding: 1px;
+    font-size: 15px;
+    color: white;
+}
+footer {
+    background-color: #191970;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 500px;
+    
+}
+</style>
+
+	<title>Supreme Court Of India</title>
+ 
+</head>
+<header>
+    	<center><h1>Supreme Court Of India</h1></center>
+    	<center><h3>|| यतो धर्मस्ततो जयः ||</h3></center>
+</header>
+
+		<div class="slideshow-container">
+<div class="mySlides fade">
+  
+  <img src="slide1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  
+  <img src="slide4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="slide3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+<ul>
+  <li><a  href="home.html">Home</a></li>
+  <li><a  href="nc.html">Notices &amp; Circulars</a></li>
+    <li><a  href="loggedInDO.html">Daily Orders</a></li>
+    
+    <li style="float:right"><a  href="home.html">Log Out</a></li>
+    <li style="float:right"><a class="active"  href="">Logged in</a></li>
+</ul>
+    
+    <body>
+<div class="container1">
+<div class="leftbar">
+<div class="card">
+  <div class="header">
+    <h3>Quick Links</h3>
+  </div>
+
+  <div class="container">
+    <h5><a style="text-decoration: none;" href="loggedInJudges.html">&#9679;Judges</a></h5>
+    <h5><a style="text-decoration: none;" href="loggedinAdvocate.html">&#9679;Advocates</a></h5>
+    <h5><a style="text-decoration: none;" href="loggedInCS.html">&#9679;Case Status</a></h5>
+    <h5>&#9679;Judgements &amp; Verdicts</h5>
+    <h5>&#9679;Caveat</h5>
+    <h5>&#9679;Case Category</h5>
+    <h5><a style="text-decoration: none;" href="loggedinCourtfees.html">&#9679;Court Fees</a></h5>
+  </div>
+</div>
+    </div>
+  
+
+  <div class="centerbar">
+      <h1>Insert Court Fees</h1>
+      <hr>
+      <form action="/action_page.php">
+Case Type:<input type="text" name="c_type">
+Category:<input type="text" name="category">
+Sub-category:<input type="text" name="sub_category">
+Fees:<input type="text" name="fees">
+<br><br>
+  <input type="submit"><br><br>
+      </form>
+</div>
+        </div>
+</body>
+<footer>
+  <p>Government Of India &#9679; 2018</p>
+</footer>
+</html>

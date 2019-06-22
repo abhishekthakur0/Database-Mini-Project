@@ -5,4 +5,8 @@
 
 Particularly ,our theme for this project was indian supreme court.
 
+##Home Page
 ![Home Page](https://github.com/kumarcops/Database-Mini-Project/blob/master/HomePage.png)
+
+##Search Styles Pages
+![Search Page](https://github.com/kumarcops/Database-Mini-Project/blob/master/Searchzzz.png)
